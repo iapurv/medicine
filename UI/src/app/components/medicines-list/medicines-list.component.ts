@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { MedicinesService } from 'src/app/services/medicines.service';
+import { MedicinesService } from './../../services/medicines.service';
 
 @Component({
   selector: 'app-medicines-list',
@@ -41,27 +41,17 @@ export class MedicinesListComponent implements OnInit {
             { name: 'ExpiryDate', type: 'string', map: '5' },
             { name: 'Notes', type: 'string', map: '6' }
         ],
-        cellClass: (row: number, columnfield: any, value: number): string => {
-          if (value < 20) {
-              return 'red';
-          }
-          else if (value >= 20 && value < 50) {
-              return 'yellow';
-          }
-          else return 'green';
-        },
         datatype: 'array'
     };
     dataAdapter: any = new jqx.dataAdapter(this.originalSource);
     columns: any[] =
     [
-        { text: 'Serial No.', datafield: 'Id', width: 80, cellclassname: this.cellClassName, cellsrenderer: this.cellsrenderer},
-        { text: 'Name', datafield: 'Name', width: 200, cellclassname: this.cellClassName, cellsrenderer: this.cellsrenderer},
-        { text: 'Brand', datafield: 'Brand', width: 200, cellclassname: this.cellClassName, cellsrenderer: this.cellsrenderer},
-        { text: 'Price', datafield: 'Price', width: 80, cellclassname: this.cellClassName, cellsrenderer: this.cellsrenderer},
-        { text: 'Quantity', datafield: 'Quantity', width: 80, cellclassname: this.cellClassName, cellsrenderer: this.cellsrenderer},
-        { text: 'Expiry Date', datafield: 'ExpiryDate', width: 120, cellclassname: this.cellClassName, cellsrenderer: this.cellsrenderer},
-        { text: 'Notes', datafield: 'Notes', cellclassname: this.cellClassName}
+        { text: 'Serial No.', datafield: 'Id', width: 80, cellsrenderer: this.cellsrenderer},
+        { text: 'Name', datafield: 'Name', width: 200, cellsrenderer: this.cellsrenderer},
+        { text: 'Brand', datafield: 'Brand', width: 200, cellsrenderer: this.cellsrenderer},
+        { text: 'Price', datafield: 'Price', width: 80, cellsrenderer: this.cellsrenderer},
+        { text: 'Quantity', datafield: 'Quantity', width: 80, cellsrenderer: this.cellsrenderer},
+        { text: 'Expiry Date', datafield: 'ExpiryDate', width: 120, cellsrenderer: this.cellsrenderer},
     ];
 
 
@@ -69,21 +59,30 @@ export class MedicinesListComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
-    this.retrieveTutorials();
-    this.source = JSON.parse(JSON.stringify(this.originalSource));
-    this.dataAdapter = new jqx.dataAdapter(this.source);
+    this.retrieveTutorials();  
   }
 
   retrieveTutorials(): void {
     this.medicinesService.getAll()
       .subscribe(
         data => {
-          this.tutorials = data;
           console.log(data);
+          this.originalSource.localdata = this.transform(data);
+          this.source = JSON.parse(JSON.stringify(this.originalSource));
+          this.dataAdapter = new jqx.dataAdapter(this.source);
+         //this.cd.markForCheck();
         },
         error => {
           console.log(error);
         });
+  }
+
+  transform(data){
+    const myData = [];
+    for (const d of data) {
+        myData.push(Object.values(d));
+    }
+    return myData;
   }
 
   refreshList(): void {

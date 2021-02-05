@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
+const baseUrl = 'http://localhost:59078/api';
 
 @Injectable({
   providedIn: 'root'
@@ -12,15 +12,15 @@ export class MedicinesService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get(baseUrl);
+    return this.http.get(baseUrl+"/all-medicines");
   }
 
   get(id): Observable<any> {
-    return this.http.get(`${baseUrl}/${id}`);
+    return this.http.get(`${baseUrl}/medicine/${id}`);
   }
 
   create(data): Observable<any> {
-    return this.http.post(baseUrl, data);
+    return this.http.post(baseUrl+"/medicine/add", data);
   }
 
   update(id, data): Observable<any> {

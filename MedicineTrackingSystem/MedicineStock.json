@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "Name": "Medicine1",
+    "Brand": "test",
+    "Price": 23.11,
+    "Quantity": 10,
+    "ExpiryDate": "2021-03-02T00:00:00",
+    "Notes": "test note"
+  },
+  {
+    "Id": 2,
+    "Name": "Medicine2",
+    "Brand": "test",
+    "Price": 23.11,
+    "Quantity": 10,
+    "ExpiryDate": "2021-03-02T00:00:00",
+    "Notes": "test note"
+  },
+  {
+    "Id": 3,
+    "Name": "Medicine3",
+    "Brand": "test",
+    "Price": 23.11,
+    "Quantity": 5,
+    "ExpiryDate": "2021-03-02T00:00:00",
+    "Notes": "test note"
+  },
+  {
+    "Id": 4,
+    "Name": "Medicine4",
+    "Brand": "test",
+    "Price": 23.11,
+    "Quantity": 20,
+    "ExpiryDate": "2021-03-10T00:00:00",
+    "Notes": "test note"
+  }
+]

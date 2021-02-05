@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { MedicinesService } from 'src/app/services/medicines.service';
+import { MedicinesService } from './../../services/medicines.service';
 
 @Component({
   selector: 'app-add-medicines',

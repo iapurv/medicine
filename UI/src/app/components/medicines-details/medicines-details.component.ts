@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MedicinesService } from 'src/app/services/medicines.service';
+import { MedicinesService } from './../../services/medicines.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class MedicinesDetailsComponent implements OnInit {
   currentTutorial = null;
   message = '';
-  dummyRes = {Id: '1', Name: 'ABC', Brand: 'Cipla', Price: '123.00', Quantity: '5', ExpiryDate: '01-12-2021', Notes: 'No notes'};
+  //dummyRes = {Id: '1', Name: 'ABC', Brand: 'Cipla', Price: '123.00', Quantity: '5', ExpiryDate: '01-12-2021', Notes: 'No notes'};
 
   constructor(
     private medicinesService: MedicinesService,
@@ -23,17 +23,16 @@ export class MedicinesDetailsComponent implements OnInit {
   }
 
   getTutorial(id): void {
-    this.currentTutorial = this.dummyRes;
-    /* this.medicinesService.get(id)
+    //this.currentTutorial = this.dummyRes;
+    this.medicinesService.get(id)
       .subscribe(
         data => {
-          // this.currentTutorial = data;
-          this.currentTutorial = {title: 'Sumit', description: 'Description'};
+          this.currentTutorial = data;
           console.log(data);
         },
         error => {
           console.log(error);
-        }); */
+        }); 
   }
 
   updatePublished(status): void {
