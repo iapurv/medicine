@@ -1,0 +1,9 @@
+C:\Work\MedicineTrackingSystem.Services\bin\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.deps.json
+C:\Work\MedicineTrackingSystem.Services\bin\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.dll
+C:\Work\MedicineTrackingSystem.Services\bin\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.pdb
+C:\Work\MedicineTrackingSystem.Services\obj\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.csprojAssemblyReference.cache
+C:\Work\MedicineTrackingSystem.Services\obj\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.AssemblyInfoInputs.cache
+C:\Work\MedicineTrackingSystem.Services\obj\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.AssemblyInfo.cs
+C:\Work\MedicineTrackingSystem.Services\obj\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.csproj.CoreCompileInputs.cache
+C:\Work\MedicineTrackingSystem.Services\obj\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.dll
+C:\Work\MedicineTrackingSystem.Services\obj\Debug\netcoreapp3.1\MedicineTrackingSystem.Services.pdb
