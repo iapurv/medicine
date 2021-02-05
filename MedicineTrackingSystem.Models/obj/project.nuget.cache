@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CQ2KzB8OxMhGADSYX1u0itPTTs0u0a6GLqdMQIph85ULSPyt8AlRjfaSQl8QXXudIFItFSQUm2uXJCg1R7Noeg==",
+  "dgSpecHash": "X299azhLwLg6LKf62lO5/g4gkiDG7hZ/Lw6xeL8fUSua9MG86DkkYg+R5SeStcU3Y5NwliSLex4aLEQy2CvGVw==",
   "success": true,
-  "projectFilePath": "C:\\Work\\MTS\\MedicineTrackingSystem.Models\\MedicineTrackingSystem.Models.csproj",
+  "projectFilePath": "C:\\Work\\Medicine\\MedicineTrackingSystem.Models\\MedicineTrackingSystem.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iapur\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
     "C:\\Users\\iapur\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",

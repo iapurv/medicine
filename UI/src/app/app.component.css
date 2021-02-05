@@ -1,0 +1,7 @@
+.low-stock {
+    background-color: yellow;
+}
+
+.near-expiry {
+    background-color: red;
+}

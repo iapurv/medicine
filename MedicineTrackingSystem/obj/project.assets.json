@@ -11922,11 +11922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\MTS\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj",
+      "projectUniqueName": "C:\\Work\\Medicine\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj",
       "projectName": "MedicineTrackingSystem",
-      "projectPath": "C:\\Work\\MTS\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj",
+      "projectPath": "C:\\Work\\Medicine\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj",
       "packagesPath": "C:\\Users\\iapur\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\MTS\\MedicineTrackingSystem\\obj\\",
+      "outputPath": "C:\\Work\\Medicine\\MedicineTrackingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iapur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11943,11 +11943,11 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "C:\\Work\\MTS\\MedicineTrackingSystem.Models\\MedicineTrackingSystem.Models.csproj": {
-              "projectPath": "C:\\Work\\MTS\\MedicineTrackingSystem.Models\\MedicineTrackingSystem.Models.csproj"
+            "C:\\Work\\Medicine\\MedicineTrackingSystem.Models\\MedicineTrackingSystem.Models.csproj": {
+              "projectPath": "C:\\Work\\Medicine\\MedicineTrackingSystem.Models\\MedicineTrackingSystem.Models.csproj"
             },
-            "C:\\Work\\MTS\\MedicineTrackingSystem.Services\\MedicineTrackingSystem.Services.csproj": {
-              "projectPath": "C:\\Work\\MTS\\MedicineTrackingSystem.Services\\MedicineTrackingSystem.Services.csproj"
+            "C:\\Work\\Medicine\\MedicineTrackingSystem.Services\\MedicineTrackingSystem.Services.csproj": {
+              "projectPath": "C:\\Work\\Medicine\\MedicineTrackingSystem.Services\\MedicineTrackingSystem.Services.csproj"
             }
           }
         }

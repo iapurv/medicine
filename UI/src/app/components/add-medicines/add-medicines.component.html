@@ -1,0 +1,47 @@
+<div style="width: 400px; margin: auto;">
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      
+    <h4>Medicine Details</h4>
+
+    <form>
+      <div class="form-group">
+        <label for="Id">Serial No.</label>
+        <input type="text" class="form-control" id="Id" [(ngModel)]="tutorial.Id" name="Id" />
+      </div>
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="tutorial.Name" name="Name" />
+      </div>
+      <div class="form-group">
+        <label for="Brand">Brand</label>
+        <input type="text" class="form-control" id="Brand" [(ngModel)]="tutorial.Brand" name="Brand" />
+      </div>
+      <div class="form-group">
+        <label for="Price">Price</label>
+        <input type="text" class="form-control" id="Price" [(ngModel)]="tutorial.Price" name="Price" />
+      </div>
+      <div class="form-group">
+        <label for="Quantity">Quantity</label>
+        <input type="text" class="form-control" id="Quantity" [(ngModel)]="tutorial.Quantity" name="Quantity" />
+      </div>
+      <div class="form-group">
+        <label for="ExpiryDate">Expiry Date</label>
+        <input type="text" class="form-control" id="ExpiryDate" [(ngModel)]="tutorial.ExpiryDate" name="ExpiryDate" />
+      </div>
+      <div class="form-group">
+        <label for="Notes">Notes</label>
+        <input type="text" class="form-control" id="Notes" [(ngModel)]="tutorial.Notes" name="Notes" />
+      </div>
+    </form>
+
+      <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+    </div>
+
+    <div *ngIf="submitted">
+      <h4>You submitted successfully!</h4>
+      <button class="btn btn-success" (click)="newTutorial()">Add More</button>
+    </div>
+
+  </div>
+</div>

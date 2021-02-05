@@ -5450,11 +5450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\MTS\\MedicineTrackingSystem.Test\\MedicineTrackingSystem.Test.csproj",
+      "projectUniqueName": "C:\\Work\\Medicine\\MedicineTrackingSystem.Test\\MedicineTrackingSystem.Test.csproj",
       "projectName": "MedicineTrackingSystem.Test",
-      "projectPath": "C:\\Work\\MTS\\MedicineTrackingSystem.Test\\MedicineTrackingSystem.Test.csproj",
+      "projectPath": "C:\\Work\\Medicine\\MedicineTrackingSystem.Test\\MedicineTrackingSystem.Test.csproj",
       "packagesPath": "C:\\Users\\iapur\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\MTS\\MedicineTrackingSystem.Test\\obj\\",
+      "outputPath": "C:\\Work\\Medicine\\MedicineTrackingSystem.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iapur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5471,8 +5471,8 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "C:\\Work\\MTS\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj": {
-              "projectPath": "C:\\Work\\MTS\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj"
+            "C:\\Work\\Medicine\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj": {
+              "projectPath": "C:\\Work\\Medicine\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj"
             }
           }
         }

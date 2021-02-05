@@ -1,0 +1,54 @@
+<div style="width: 400px; margin: auto;">
+  <div *ngIf="currentTutorial" class="edit-form">
+    <h4>Medicine</h4>
+    <form>
+      <div class="form-group">
+        <label for="Id">S NO</label>
+        <input disabled type="text" class="form-control" id="Id" [(ngModel)]="currentTutorial.Id" name="Id" />
+      </div>
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input disabled type="text" class="form-control" id="title" [(ngModel)]="currentTutorial.Name" name="Name" />
+      </div>
+      <div class="form-group">
+        <label for="Brand">Brand</label>
+        <input disabled type="text" class="form-control" id="Brand" [(ngModel)]="currentTutorial.Brand" name="Brand" />
+      </div>
+      <div class="form-group">
+        <label for="Price">Price</label>
+        <input disabled type="text" class="form-control" id="Price" [(ngModel)]="currentTutorial.Price" name="Price" />
+      </div>
+      <div class="form-group">
+        <label for="Quantity">Quantity</label>
+        <input disabled type="text" class="form-control" id="Quantity" [(ngModel)]="currentTutorial.Quantity" name="Quantity" />
+      </div>
+      <div class="form-group">
+        <label for="ExpiryDate">Expiry Date</label>
+        <input disabled type="text" class="form-control" id="ExpiryDate" [(ngModel)]="currentTutorial.ExpiryDate"
+          name="ExpiryDate" />
+      </div>
+      <div class="form-group">
+        <label for="Notes">Notes</label>
+        <input disabled type="text" class="form-control" id="Notes" [(ngModel)]="currentTutorial.Notes" name="Notes" />
+      </div>
+
+      <!-- <div class="form-group">
+        <label><strong>Status:</strong></label>
+        {{ currentTutorial.published ? "Published" : "Pending" }}
+      </div> -->
+
+    </form>
+
+    <!--
+    <button class="badge badge-primary mr-2" *ngIf="currentTutorial.published" (click)="updatePublished(false)">UnPublish</button>
+    <button *ngIf="!currentTutorial.published" class="badge badge-primary mr-2" (click)="updatePublished(true)">Publish</button>
+    <button class="badge badge-danger mr-2" (click)="deleteTutorial()">Delete</button>
+    <button type="submit" class="badge badge-success" (click)="updateTutorial()">Update</button>
+    <p>{{ message }}</p> -->
+  </div>
+
+  <!-- <div *ngIf="!currentTutorial">
+    <br />
+    <p>Cannot access this Tutorial...</p>
+  </div> -->
+</div>

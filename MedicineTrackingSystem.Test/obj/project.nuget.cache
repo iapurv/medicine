@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D1cZCsphfg1J6Rms4jqIwVVxbvFAJtACM4pLvcCFH8+rO0n5MD7AwhiZxDMHFHBpdc8gNfNOs5EUB9DydI3AZg==",
+  "dgSpecHash": "z7vSI4DaPSKt+jmrT086N7X1mtGxnuXczMiAk9QmxWj+1fcggMQfcBNZgHROdhh/BNIvV79TJMkeBZ+mpyFhYQ==",
   "success": true,
-  "projectFilePath": "C:\\Work\\MTS\\MedicineTrackingSystem.Test\\MedicineTrackingSystem.Test.csproj",
+  "projectFilePath": "C:\\Work\\Medicine\\MedicineTrackingSystem.Test\\MedicineTrackingSystem.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iapur\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\iapur\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

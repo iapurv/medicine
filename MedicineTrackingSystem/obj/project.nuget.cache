@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PzUrEJxUXVx5xS1CQkvUnGMrLQl3at9FOZTdC3lXpwlMvBVTLZf6pbhg3i9k6yxEoeh6b9QA/ofOklA7YOmeDQ==",
+  "dgSpecHash": "ULmbkp3Z9q5pjLezkTYl1K90Te+6vqib8DMRBngYG6JHdUESgYlWaaqKAO8srsLY9TRF5OklHMe6lED/7L504g==",
   "success": true,
-  "projectFilePath": "C:\\Work\\MTS\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj",
+  "projectFilePath": "C:\\Work\\Medicine\\MedicineTrackingSystem\\MedicineTrackingSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iapur\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\iapur\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

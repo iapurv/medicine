@@ -15,3 +15,12 @@ C:\Work\MTS\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTracki
 C:\Work\MTS\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.csproj.CoreCompileInputs.cache
 C:\Work\MTS\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.dll
 C:\Work\MTS\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.pdb
+C:\Work\Medicine\MedicineTrackingSystem.Models\bin\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.deps.json
+C:\Work\Medicine\MedicineTrackingSystem.Models\bin\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.dll
+C:\Work\Medicine\MedicineTrackingSystem.Models\bin\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.pdb
+C:\Work\Medicine\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.csprojAssemblyReference.cache
+C:\Work\Medicine\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.AssemblyInfoInputs.cache
+C:\Work\Medicine\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.AssemblyInfo.cs
+C:\Work\Medicine\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.csproj.CoreCompileInputs.cache
+C:\Work\Medicine\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.dll
+C:\Work\Medicine\MedicineTrackingSystem.Models\obj\Debug\netcoreapp2.1\MedicineTrackingSystem.Models.pdb
