@@ -9,13 +9,13 @@ import { MedicinesService } from './../../services/medicines.service';
 })
 export class AddMedicinesComponent implements OnInit {
   tutorial = {
-    Id: '',
-    Name: '',
-    Brand: '',
-    Price: '',
-    Quantity: '',
-    ExpiryDate: '',
-    Notes: ''
+    id: '',
+    name: '',
+    brand: '',
+    price: '',
+    quantity: '',
+    expiryDate: '',
+    notes: ''
   };
   submitted = false;
 
@@ -26,13 +26,12 @@ export class AddMedicinesComponent implements OnInit {
 
   saveTutorial(): void {
     const data = {
-      Id: this.tutorial.Id,
-      Name: this.tutorial.Name,
-      Brand: this.tutorial.Brand,
-      Price: this.tutorial.Price,
-      Quanitity: this.tutorial.Quantity,
-      ExpiryDate: this.tutorial.ExpiryDate,
-      Notes: this.tutorial.Notes
+      name: this.tutorial.name,
+      brand: this.tutorial.brand,
+      price: parseFloat(this.tutorial.price),
+      quantity: parseInt(this.tutorial.quantity),
+      expiryDate: this.tutorial.expiryDate,
+      notes: this.tutorial.notes
     };
 
     this.tutorialService.create(data)
@@ -51,13 +50,13 @@ export class AddMedicinesComponent implements OnInit {
   newTutorial(): void {
     this.submitted = false;
     this.tutorial = {
-      Id: '',
-      Name: '',
-      Brand: '',
-      Price: '',
-      Quantity: '',
-      ExpiryDate: '',
-      Notes: ''
+      id: '',
+      name: '',
+      brand: '',
+      price: '',
+      quantity: '',
+      expiryDate: '',
+      notes: ''
     };
   }
 

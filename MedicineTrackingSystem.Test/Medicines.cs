@@ -4,6 +4,7 @@ using MedicineTrackingSystem.Models.Response;
 using MedicineTrackingSystem.Services.Contracts;
 using MedicineTrackingSystem.Services.Contracts.Commands;
 using MedicineTrackingSystem.Services.Contracts.Query;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -37,21 +38,31 @@ namespace MedicineTrackingSystem.Test
             medicine.ExpiryDate = Convert.ToDateTime(expiry);
             medicine.Notes = notes;
 
-            MedicineController controller = new MedicineController(_medicineQuery.Object, _medicineCommand.Object);
-            _medicineCommand.Setup(x => x.AddMedicine(medicine)).Returns(new BaseResponse());
             _utilityService.Setup(x => x.WriteJsonFile(medicine)).Returns(true);
 
-            controller.AddMedicine(medicine);
+            var serviceResponse = _medicineCommand.Object.AddMedicine(medicine);
+            Assert.IsNotNull(serviceResponse);
+            Assert.Equals(serviceResponse.Status, System.Net.HttpStatusCode.OK);
         }
 
         [TestCase(1)]
         public void GetMedicine(int medicineId)
         {
-            MedicineController controller = new MedicineController(_medicineQuery.Object, _medicineCommand.Object);
-            _medicineQuery.Setup(x => x.GetMedicine(medicineId)).Returns(new MedicineResponse());
-            _utilityService.Setup(x => x.ReadJsonFile()).Returns(new List<MedicineResponse>());
+            List<MedicineResponse> medicines = new List<MedicineResponse>();
+            MedicineResponse medicine = new MedicineResponse();
+            medicine.Name = "Medicine1";
+            medicine.Brand = "Brand1";
+            medicine.Price = Convert.ToDecimal(23.11);
+            medicine.Quantity = 10;
+            medicine.ExpiryDate = Convert.ToDateTime("03-02-2021");
+            medicine.Notes = "Test Note";
+            medicines.Add(medicine);
 
-            controller.GetMedicine(medicineId);
+            _utilityService.Setup(x => x.ReadJsonFile()).Returns(medicines);
+
+            var serviceResponse = _medicineQuery.Object.GetMedicine(medicineId);
+            Assert.IsNotNull(serviceResponse);
+            Assert.Equals(serviceResponse, medicine);
         }
     }
 }

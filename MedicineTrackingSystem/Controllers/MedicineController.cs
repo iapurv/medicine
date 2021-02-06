@@ -2,10 +2,12 @@
 using MedicineTrackingSystem.Services.Contracts.Commands;
 using MedicineTrackingSystem.Services.Contracts.Query;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MedicineTrackingSystem.Controllers
 {
+    [EnableCors("CorsPolicy")]
     [ApiController]
     public class MedicineController : ControllerBase
     {

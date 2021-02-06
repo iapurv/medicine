@@ -46,12 +46,12 @@ export class MedicinesListComponent implements OnInit {
     dataAdapter: any = new jqx.dataAdapter(this.originalSource);
     columns: any[] =
     [
-        { text: 'Serial No.', datafield: 'Id', width: 80, cellsrenderer: this.cellsrenderer},
-        { text: 'Name', datafield: 'Name', width: 200, cellsrenderer: this.cellsrenderer},
-        { text: 'Brand', datafield: 'Brand', width: 200, cellsrenderer: this.cellsrenderer},
-        { text: 'Price', datafield: 'Price', width: 80, cellsrenderer: this.cellsrenderer},
-        { text: 'Quantity', datafield: 'Quantity', width: 80, cellsrenderer: this.cellsrenderer},
-        { text: 'Expiry Date', datafield: 'ExpiryDate', width: 120, cellsrenderer: this.cellsrenderer},
+        { text: 'Serial No.', datafield: 'Id', width: 130, cellsrenderer: this.cellsrenderer},
+        { text: 'Name', datafield: 'Name', width: 250, cellsrenderer: this.cellsrenderer},
+        { text: 'Brand', datafield: 'Brand', width: 250, cellsrenderer: this.cellsrenderer},
+        { text: 'Price', datafield: 'Price', width: 130, cellsrenderer: this.cellsrenderer},
+        { text: 'Quantity', datafield: 'Quantity', width: 130, cellsrenderer: this.cellsrenderer},
+        { text: 'Expiry Date', datafield: 'ExpiryDate', width: 170, cellsrenderer: this.cellsrenderer},
     ];
 
 
